@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Articles [
+
+    <!ELEMENT Articles (Article+) >
+    <!ELEMENT Article (Titre , Texte , bibliographie)>
+    <!ELEMENT Titre  (#PCDATA)>
+    <!ELEMENT Texte (paragraphe)>
+    <!ELEMENT paragraphe (#PCDATA |important)*>
+    <!ELEMENT important (#PCDATA)>
+    <!ATTLIST paragraphe ref IDREF #REQUIRED>
+    <!ELEMENT bibliographie (Entrer+)>
+    <!ELEMENT Entrer  (siteWeb | ouvrage )>
+    <!ATTLIST Entrer id ID #REQUIRED>
+    <!ELEMENT siteWeb (nom , url)>
+    <!ELEMENT nom (#PCDATA)>
+    <!ELEMENT url (#PCDATA)>
+    <!ELEMENT ouvrage (Titre , auteur , date)>
+    <!ELEMENT auteur (#PCDATA)>
+    <!ELEMENT date (#PCDATA)>
+
+]>
+
+
+<Articles>
+    <Article>
+        <Titre>The greatest player in the world </Titre>
+        <Texte>
+            <paragraphe ref="e1">
+                It might not always feel like it, but we're living in a golden age of the game: the quality has never been this high, with mid-level Premier League 
+                clubs boasting world-class talent and the best players on Earth capable of performing in any era, really.
+                 The margins at the elite level are <important>othman</important> than ever  with some of these guys
+                     to become some of the greatest players of all time,
+            </paragraphe>
+        </Texte>
+        <bibliographie>
+            <Entrer id="e1">
+                <siteWeb>
+                    <nom>
+                        The goat 
+                    </nom>
+                    <url>
+                        https://othman.com
+                    </url>
+                </siteWeb>
+            </Entrer>
+            <Entrer id="e3">
+                <ouvrage>
+                    <Titre>
+                        The goat is Ronaldo 
+                    </Titre>
+                    <auteur>
+                        Othman Benyahya
+                    </auteur>
+                    <date>
+                          10-1-2025
+                    </date>
+                </ouvrage>
+            </Entrer>
+        </bibliographie>
+    </Article>
+</Articles>
