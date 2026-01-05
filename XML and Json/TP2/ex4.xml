@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE formations [
+    <!ELEMENT formations (formation+)>
+    <!ELEMENT formation (nom_formation ,etudiants , modules)>
+    <!ELEMENT nom_formation (#PCDATA)>
+    <!ELEMENT etudiants (etudiant+)>
+    <!ELEMENT modules (module+)>
+    <!ELEMENT etudiant EMPTY >
+    <!ATTLIST etudiant
+     CEN ID #REQUIRED 
+     nom CDATA #REQUIRED 
+     email CDATA #IMPLIED
+      >
+    <!ELEMENT module (notes?)>
+    <!ELEMENT notes (note+)>
+    <!ELEMENT note  (#PCDATA) >
+    <!ATTLIST module
+     nom CDATA #REQUIRED
+     type CDATA #REQUIRED>
+     <!ATTLIST note
+      CEN IDREF #REQUIRED 
+      >
+]>
+<formations>
+    <formation>
+        <nom_formation>genie informatique</nom_formation>
+        <etudiants>
+            <etudiant CEN="e21" nom="Othman" email="othman@gmail.com"/>
+            <etudiant CEN="e22" nom="HAMZA" email="hamza@gmail.com"/>
+            <etudiant CEN="e23" nom="ALI" email="ali@gmail.com"/>
+            <etudiant CEN="e24" nom="ADAM" email="adam@gmail.com"/>
+        </etudiants>
+        <modules>
+            <module nom="AI" type="libre">
+                <notes>
+                    <note CEN="e21">19</note>
+                    <note CEN="e22">17</note>
+                    <note CEN="e23">20</note>
+                    <note CEN="e24">14</note>
+                </notes>
+            </module>
+                <module nom="Cyber" type="nonlibre">
+                <notes>
+                    <note CEN="e21">14</note>
+                    <note CEN="e22">13</note>
+                    <note CEN="e23">12</note>
+                    <note CEN="e24">14</note>
+                </notes>
+            </module>
+        </modules>
+    </formation>
+</formations>

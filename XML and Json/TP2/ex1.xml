@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE livre[
+    <!ELEMENT livre (Titre , sous_titre , paragraphe , comited+)>
+    <!ELEMENT Titre (#PCDATA)>
+    <!ELEMENT sous_titre (#PCDATA)>
+    <!ELEMENT paragraphe (#PCDATA)>
+    <!ELEMENT comited (nom , membres)>
+    <!ELEMENT nom (#PCDATA)>
+    <!ELEMENT membres (membre)+>
+    <!ELEMENT membre EMPTY >
+    <!ATTLIST membre nom CDATA #REQUIRED>
+
+
+]>
+<livre>
+    <Titre>Ma vie</Titre>
+    <sous_titre>par Christian Remillard</sous_titre>
+    <paragraphe> Il etait une fois ....</paragraphe>
+    <comited>
+        <nom>Comite pour la revision des metadonnees </nom>
+        <membres>
+            <membre nom="Jan pole sarter"/>
+            <membre nom="Alan de rien" />
+        </membres>
+    </comited>
+
+    <comited>
+        <nom>Comite pour la revision des metadonnees</nom>
+        <membres>
+            <membre nom="Louis Dantin" />
+            <membre nom="Charles Gil" />
+        </membres>
+    </comited>
+</livre>

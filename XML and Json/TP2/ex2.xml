@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE User [
+    <!ELEMENT User (adm)>
+    <!ELEMENT adm (adm1 | adm2+)>
+    <!ELEMENT adm1 (#PCDATA)>
+    <!ELEMENT adm2 (#PCDATA)>
+
+]>
+<User>
+    <adm>
+        <adm2>othman is the best player in the world </adm2>
+        <adm2>hello friends ..</adm2>
+    </adm>
+</User>
