@@ -1,0 +1,1 @@
+INSERT INTO vente VALUES (1 , 1, 2 , 20 , 2, TO_DATE('22-3-2008' , 'DD-MM-YY'));
