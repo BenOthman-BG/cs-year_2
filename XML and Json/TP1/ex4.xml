@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cinema [
+    <!ELEMENT cinema (acteurs , films)>
+    <!ELEMENT acteurs (acteur+)>
+    <!ELEMENT acteur (etat_civil ,photo , siteWeb , biographie)>
+    <!ATTLIST acteur a_id ID #REQUIRED>
+    <!ELEMENT etat_civil ANY>
+    <!ELEMENT nom (#PCDATA)>
+    <!ELEMENT date_naissance (#PCDATA)>
+    <!ELEMENT photo EMPTY >
+    <!ATTLIST photo src CDATA #REQUIRED>
+    <!ELEMENT siteWeb (#PCDATA)>
+    <!ELEMENT biographie (#PCDATA | acteur_ref |film_ref |important )*>
+    <!ELEMENT acteur_ref (#PCDATA)>
+    <!ELEMENT film_ref (#PCDATA)>
+    <!ELEMENT important (#PCDATA)>
+    <!ATTLIST acteur_ref ref  IDREF #REQUIRED>
+    <!ATTLIST film_ref ref IDREF #REQUIRED>
+    <!ELEMENT films (film+)>
+    <!ELEMENT film (titre , annee)>
+    <!ELEMENT titre (#PCDATA)>
+    <!ELEMENT annee (#PCDATA)>
+    <!ATTLIST film f_id ID #REQUIRED>
+]>
+
+
+<cinema>
+    <acteurs>
+        <acteur a_id="a1">
+            <etat_civil>
+                <nom>Leonardo DiCaprio</nom>
+                <date_naissance>11/11/1974</date_naissance>
+            </etat_civil>
+            <photo src="https://upload.wikimedia.org/leonardo.jpg"/>
+            <siteWeb>https://www.leonardodicaprio.com</siteWeb>
+            <biographie>
+                Leonardo DiCaprio is a famous American actor who starred with 
+                <acteur_ref ref="a2">Brad Pitt</acteur_ref>
+                in the movie 
+                <film_ref ref="f1">Once Upon a Time in Hollywood</film_ref>.
+                <important>He won the Oscar in 2016.</important>
+            </biographie>
+        </acteur>
+
+        <acteur a_id="a2">
+            <etat_civil>
+                <nom>Brad Pitt</nom>
+                <date_naissance>18/12/1963</date_naissance>
+            </etat_civil>
+            <photo src="https://upload.wikimedia.org/bradpitt.jpg"/>
+            <siteWeb>https://www.bradpitt.com</siteWeb>
+            <biographie>
+                Brad Pitt is an American actor and producer. He worked with 
+                <acteur_ref ref="a1">Leonardo DiCaprio</acteur_ref>
+                in 
+                <film_ref ref="f1">Once Upon a Time in Hollywood</film_ref>.
+            </biographie>
+        </acteur>
+    </acteurs>
+
+    <films>
+        <film f_id="f1">
+            <titre>Once Upon a Time in Hollywood</titre>
+            <annee>2019</annee>
+        </film>
+
+        <film f_id="f2">
+            <titre>Inception</titre>
+            <annee>2010</annee>
+        </film>
+    </films>
+</cinema>
