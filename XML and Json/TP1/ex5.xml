@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cinema [
+    <!ELEMENT cinema (films)>
+    <!ELEMENT films (film+)>
+    <!ELEMENT film (titre , photo , realisateur , casting , synopsis  )>
+    <!ATTLIST film lang CDATA #REQUIRED>
+    <!ELEMENT  titre (#PCDATA)>
+    <!ELEMENT photo EMPTY>
+    <!ATTLIST photo src CDATA #REQUIRED>
+    <!ELEMENT realisateur (#PCDATA)>
+    <!ELEMENT casting (acteurs ,personnages_joue )>
+    <!ELEMENT acteurs (acteur+)>
+    <!ELEMENT personnages_joue (personnage_joue+)>
+    <!ELEMENT acteur (#PCDATA)>
+    <!ATTLIST acteur ref IDREF #REQUIRED >
+    <!ELEMENT personnage_joue (#PCDATA)>
+    <!ATTLIST personnage_joue p_id ID #REQUIRED>
+    <!ELEMENT synopsis (#PCDATA | personnage_ref)*>
+    <!ELEMENT personnage_ref (#PCDATA)>
+    <!ATTLIST personnage_ref ref IDREF #REQUIRED>
+    
+]>
+<cinema>
+    <films>
+        <film lang="en">
+            <titre>Inception</titre>
+            <photo src="https://upload.wikimedia.org/inception.jpg"/>
+            <realisateur>Christopher Nolan</realisateur>
+
+            <casting>
+                <acteurs>
+                    <acteur ref="p1">Leonardo DiCaprio</acteur>
+                    <acteur ref="p2">Joseph Gordon-Levitt</acteur>
+                </acteurs>
+
+                <personnages_joue>
+                    <personnage_joue p_id="p1">Dom Cobb</personnage_joue>
+                    <personnage_joue p_id="p2">Arthur</personnage_joue>
+                </personnages_joue>
+            </casting>
+
+            <synopsis>
+                The story follows 
+                <personnage_ref ref="p1">Dom Cobb</personnage_ref>,
+                a professional thief who steals secrets from dreams.
+                He is assisted by 
+                <personnage_ref ref="p2">Arthur</personnage_ref>
+                during complex missions.
+            </synopsis>
+        </film>
+    </films>
+</cinema>
