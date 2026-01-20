@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rapport
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="rapport.xsd">
+
+  <mondata numero="1" date="2024-01-10" montant="1500" devise="MAD">
+
+    <expediteur
+      cin="AB123456"
+      nom="Ahmed"
+      prenom="Ali"
+      ville="Rabat"/>
+
+    <destinataire
+      cin="CD789012"
+      nom="Sara"
+      prenom="Youssef"
+      ville="Casablanca"/>
+
+  </mondata>
+
+</rapport>
