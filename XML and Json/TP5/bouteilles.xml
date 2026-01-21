@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bouteilles
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="bouteilles.xsd">
+
+
+    <!-- Bouteille 1 : Cristalline - St Cyr la Source -->
+    <bouteille>
+        <nom_marque>Cristalline</nom_marque>
+
+        <volume unite="cl">150</volume>
+
+        <composant_chimique nom_composant="Calcium" pourcentage="71" unite="mg/l"/>
+        <composant_chimique nom_composant="Magnesium" pourcentage="5.5" unite="mg/l"/>
+        <composant_chimique nom_composant="Chlorures" pourcentage="20" unite="mg/l"/>
+        <composant_chimique nom_composant="Nitrates" pourcentage="1" unite="mg/l"/>
+        <composant_chimique nom_composant="Fer" pourcentage="0.1" unite="mg/l"/>
+
+        <PH>7.45</PH>
+        <source_fabrication>St-Cyr la Source, Loiret</source_fabrication>
+        <code_bar>3274080005003</code_bar>
+    </bouteille>
+
+    <!-- Bouteille 2 : Cristalline - Source d'Aurèle -->
+    <bouteille>
+        <nom_marque>Cristalline</nom_marque>
+
+        <volume unite="cl">50</volume>
+
+        <composant_chimique nom_composant="Calcium" pourcentage="98" unite="mg/l"/>
+        <composant_chimique nom_composant="Magnesium" pourcentage="4" unite="mg/l"/>
+        <composant_chimique nom_composant="Chlorures" pourcentage="3.6" unite="mg/l"/>
+        <composant_chimique nom_composant="Nitrates" pourcentage="2" unite="mg/l"/>
+
+        <PH>7.4</PH>
+        <source_fabrication>Source d'Aurèle, Alpes Maritimes</source_fabrication>
+        <code_bar>3268840001008</code_bar>
+    </bouteille>
+
+    <!-- Bouteille 3 : Volvic -->
+    <bouteille>
+        <nom_marque>Volvic</nom_marque>
+
+        <volume unite="cl">50</volume>
+
+        <composant_chimique nom_composant="Calcium" pourcentage="11.5" unite="mg/l"/>
+        <composant_chimique nom_composant="Magnesium" pourcentage="8.0" unite="mg/l"/>
+        <composant_chimique nom_composant="Chlorures" pourcentage="13.5" unite="mg/l"/>
+        <composant_chimique nom_composant="Nitrates" pourcentage="6.3" unite="mg/l"/>
+        <composant_chimique nom_composant="Silice" pourcentage="0.5" unite="mg/l"/>
+
+        <PH>7.0</PH>
+        <source_fabrication>Volvic</source_fabrication>
+        <code_bar>3057640117008</code_bar>
+    </bouteille>
+
+</bouteilles>

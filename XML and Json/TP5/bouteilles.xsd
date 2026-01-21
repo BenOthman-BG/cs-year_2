@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="bouteilles">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="bouteille" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nom_marque" type="xs:string"/>
+                            <xs:element name="volume">
+                            <xs:complexType>
+                                <xs:simpleContent>
+                                <xs:extension base="xs:int">
+                                    <xs:attribute name="unite" type="xs:string" fixed="cl"/>
+                                </xs:extension>
+                                </xs:simpleContent>
+                            </xs:complexType>
+                            </xs:element>
+                            <xs:element name="composant_chimique" minOccurs="1" maxOccurs="unbounded">
+                                <xs:complexType>
+
+                                    <xs:attribute  name="nom_composant" type="xs:string" use="required"/>
+                                    <xs:attribute  name="pourcentage" type="xs:float" use="required"/>
+                                    <xs:attribute  name="unite" type="xs:string" fixed="mg/l"/>
+
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="PH" type="xs:decimal"/>
+                            <xs:element name="source_fabrication" type="xs:string"/>
+                            <xs:element name="code_bar" type="xs:double"/>
+
+                        </xs:sequence>
+                    </xs:complexType>
+
+
+                </xs:element>
+
+
+            </xs:sequence>
+
+
+        </xs:complexType>
+
+        
+    </xs:element>
+</xs:schema>
