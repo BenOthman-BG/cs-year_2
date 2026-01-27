@@ -29,7 +29,7 @@ console.log(array_2);
 
 //splice(start , count , add)
 
-array_2.splice(1, 3); //delete or replace
+array_2.splice(1, 3, "othman"); //delete or replace
 console.log(array_2);
 
 //slice()
@@ -72,8 +72,8 @@ console.log(array_2);
 
 //concat
 
-console.log(array_2.concat(arr , 'othman'));
+console.log(array_2.concat(arr, "othman"));
 
 //join('-')
 
-console.log(array_2.join('-'));
+// console.log(array_2.join('-'));
