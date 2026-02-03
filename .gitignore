@@ -6,6 +6,9 @@ oth.txt
 bin/
 .settings/
 module-info.java
+/settings
+build
+
 
 
 # Reamde

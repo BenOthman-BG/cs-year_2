@@ -1,0 +1,89 @@
+/* Reset بسيط */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+}
+
+/* Background */
+body {
+    background: linear-gradient(135deg, #eef2f7, #dfe7f1);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main container */
+div {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 25px 30px;
+    width: 380px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    margin-bottom: 15px;
+}
+
+/* Title (optional if you add h2) */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Table layout */
+table {
+    width: 100%;
+    border-spacing: 0 12px;
+}
+
+td {
+    color: #34495e;
+    font-size: 14px;
+}
+
+/* Inputs */
+input[type="text"] {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccd1d9;
+    border-radius: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.4);
+    outline: none;
+}
+
+/* Button */
+button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #2c80b4;
+    transform: translateY(-1px);
+}
+
+/* Result box */
+div:last-of-type {
+    text-align: center;
+    background: #f4f8fb;
+    border-left: 5px solid #3498db;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2c3e50;
+}
