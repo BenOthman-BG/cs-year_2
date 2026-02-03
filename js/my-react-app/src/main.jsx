@@ -1,16 +1,16 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import App from "./App.jsx";
-import HelloWorld from "./HelloWorld/Helloworld.jsx";
+import Bonjour from "./Bonjour/Bonjour.jsx";
+import Aff_cach from "./Bonjour/Aff_cach.jsx";
+import Exercice3 from "./Bonjour/Exercice3.jsx";
 
 
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <HelloWorld />
-    <App name="Ali" />
-    <App name="Othman" />
-    <App name="Ali" />
+     <Bonjour />
+     <Aff_cach />
+     <Exercice3 />
   </StrictMode>,
 );
