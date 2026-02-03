@@ -1,5 +1,5 @@
 package Exercices.Threads.ex_1;
-
+//lkmlmlkmlkm
 public class Main {
     public static void main(String[] args)  throws  InterruptedException{
 

@@ -1,0 +1,22 @@
+{
+  "messages": [
+    {
+      "objet": "Mise à jour du Projet",
+      "expediteur": "jean.dupont@email.com",
+      "destinataire": "equipe.technique@email.com",
+      "date": "2026-02-03",
+      "contenu": "Les fichiers JSON demandés ont été finalisés et testés.",
+      "importance": "important",
+      "categories": ["Travail", "Urgent"]
+    },
+    {
+      "objet": "Invitation Réunion",
+      "expediteur": "rh@entreprise.com",
+      "destinataire": "tous.employes@entreprise.com",
+      "date": "2026-02-04",
+      "contenu": "Nous vous attendons dans la salle de conférence principale à 10h.",
+      "importance": "normal",
+      "categories": ["Social", "Interne"]
+    }
+  ]
+}

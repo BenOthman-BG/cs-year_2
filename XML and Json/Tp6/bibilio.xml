@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="biblio.xsl"?>
+<bibliotheque>
+    <livre>
+        <titre>Nou M</titre>
+        <auteur>Agatha Christie</auteur>
+        <ref>Policier-C-15</ref>
+    </livre>
+    <livre>
+        <titre>Le chien des Baskerville</titre>
+        <auteur>Sir Arthur Conan Doyle</auteur>
+        <ref>Policier-D-3</ref>
+    </livre>
+</bibliotheque>
