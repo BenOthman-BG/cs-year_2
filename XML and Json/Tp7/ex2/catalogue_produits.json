@@ -1,0 +1,38 @@
+{
+  "catalogue": {
+    "produit": [
+      {
+        "id_produit": "P001",
+        "nom_produit": "Ordinateur Portable Pro",
+        "categorie": "Informatique",
+        "prix": {
+          "_text": "1250.50",
+          "devise": "EUR"
+        },
+        "stock": 15,
+        "description": "Écran 15 pouces, 16Go RAM, SSD 512Go."
+      },
+      {
+        "id_produit": "P002",
+        "nom_produit": "Souris Sans Fil",
+        "categorie": "Accessoires",
+        "prix": {
+          "_text": "29.99",
+          "devise": "EUR"
+        },
+        "stock": 100
+      },
+      {
+        "id_produit": "P003",
+        "nom_produit": "Casque Bluetooth",
+        "categorie": "Audio",
+        "prix": {
+          "_text": "89.00",
+          "devise": "EUR"
+        },
+        "stock": 0,
+        "description": "Réduction de bruit active et autonomie de 30h."
+      }
+    ]
+  }
+}

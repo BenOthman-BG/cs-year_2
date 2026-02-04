@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="playlist.xsl"?>
+<playlist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+          xsi:noNamespaceSchemaLocation="playlist.xsd">
+    <chanson>
+        <titre>Imagine</titre>
+        <artiste>John Lennon</artiste>
+        <album>Imagine</album>
+        <duree>3:04</duree>
+        <genre>Pop</genre>
+        <genre>Rock</genre>
+    </chanson>
+    <chanson>
+        <titre>Bohemian Rhapsody</titre>
+        <artiste>Queen</artiste>
+        <album>A Night at the Opera</album>
+        <duree>5:55</duree>
+        <genre>Rock</genre>
+        <genre>Progressive Rock</genre>
+    </chanson>
+    <chanson>
+        <titre>Hotel California</titre>
+        <artiste>Eagles</artiste>
+        <album>Hotel California</album>
+        <duree>6:30</duree>
+        <genre>Rock</genre>
+        <genre>Classic Rock</genre>
+    </chanson>
+</playlist>

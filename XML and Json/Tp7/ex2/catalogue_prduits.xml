@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="catalogue_produits.xsl"?>
+<catalogue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+           xsi:noNamespaceSchemaLocation="catalogue_produits.xsd">
+    
+    <produit id_produit="P001">
+        <nom_produit>Ordinateur Portable Pro</nom_produit>
+        <categorie>Informatique</categorie>
+        <prix devise="EUR">1250.50</prix>
+        <stock>15</stock>
+        <description>Écran 15 pouces, 16Go RAM, SSD 512Go.</description>
+    </produit>
+
+    <produit id_produit="P002">
+        <nom_produit>Souris Sans Fil</nom_produit>
+        <categorie>Accessoires</categorie>
+        <prix devise="EUR">29.99</prix>
+        <stock>100</stock>
+    </produit>
+
+    <produit id_produit="P003">
+        <nom_produit>Casque Bluetooth</nom_produit>
+        <categorie>Audio</categorie>
+        <prix devise="EUR">89.00</prix>
+        <stock>0</stock>
+        <description>Réduction de bruit active et autonomie de 30h.</description>
+    </produit>
+</catalogue>

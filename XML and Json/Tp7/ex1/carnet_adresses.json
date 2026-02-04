@@ -1,0 +1,40 @@
+{
+ "Contacts": [
+  {
+   "Nom": "Dupont",
+   "Prenom": "Jean",
+   "Telephone": "0123456789",
+   "Email": "othmanbenyahy@gmail.com",
+    "Adresse": {
+     "Rue": "123 Rue Principale",
+     "Ville": "Paris",
+     "CodePostal": "75001"
+    }
+
+    },
+    {
+    "Nom": "Martin",
+    "Prenom": "Sophie",
+    "Telephone": "0987654321",
+    "Email": "sophie.martin@gmail.com", 
+    "Adresse": {
+     "Rue": "456 Avenue Secondaire",
+     "Ville": "Lyon",
+     "CodePostal": "69002"
+    }
+    },
+    {
+    "Nom": "Bernard",
+    "Prenom": "Luc",
+    "Telephone": "0147852369",
+    "Email": "luc.bernard@gmail.com",
+    "Adresse": {
+     "Rue": "789 Boulevard Tertiaire",
+     "Ville": "Marseille",
+     "CodePostal": "13003"
+    }
+    }
+
+ ]
+
+}

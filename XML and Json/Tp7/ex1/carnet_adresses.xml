@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="carnet_adresses.xsl"?>
+<carnet>
+    <contact>
+        <nom>Dupont</nom>
+        <prenom>Jean</prenom>
+        <telephone>0123456789</telephone>
+        <email>othmanbenyahy@gmail.com</email>
+        <adresse>
+            <rue>123 Rue de Paris</rue>
+            <ville>Paris</ville>
+            <code_postal>75001</code_postal>
+            <pays>France</pays>
+        </adresse>
+    </contact>
+    <contact>
+        <nom>Martin</nom>
+        <prenom>Marie</prenom>
+        <telephone>0987654321</telephone>
+        <email>marie.martin@gmail.com</email>
+        <adresse>
+            <rue>456 Avenue de Lyon</rue>
+            <ville>Lyon</ville>
+            <code_postal>69002</code_postal>
+            <pays>France</pays>
+        </adresse>
+    </contact>
+    <contact>
+        <nom>Bernard</nom>
+        <prenom>Luc</prenom>
+        <telephone>0147852369</telephone>
+        <email>luc.bernard@gmail.com</email>
+        <adresse>
+            <rue>789 Boulevard Tertiaire</rue>
+            <ville>Marseille</ville>
+            <code_postal>13003</code_postal>
+            <pays>France</pays>
+        </adresse>
+    </contact>
+</carnet>

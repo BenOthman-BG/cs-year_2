@@ -1,0 +1,25 @@
+{
+ "chanson": [
+  {
+   "titre": "Imagine",
+   "artiste": "John Lennon",
+   "album": "Imagine",
+   "duree": "3:04",
+   "genre": ["Pop", "Rock"]
+  },
+  {
+   "titre": "Bohemian Rhapsody",
+   "artiste": "Queen",
+   "album": "A Night at the Opera",
+   "duree": "5:55",
+    "genre": ["Rock", "Progressive Rock"]
+  },
+  {
+   "titre": "Hotel California",
+   "artiste": "Eagles",
+   "album": "Hotel California",
+   "duree": "6:30",
+   "genre": ["Rock", "Classic Rock"]
+  }
+ ] 
+}

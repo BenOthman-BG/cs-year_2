@@ -18,6 +18,7 @@ import Metier.IcreditMetier;
 public class ControleurServlet  extends HttpServlet{
 	
 	
+	private static final long serialVersionUID = 1L;
 	// create a interface variable 
 	private IcreditMetier metier ;
 	
@@ -61,7 +62,7 @@ public class ControleurServlet  extends HttpServlet{
 		
 		//data treatment return in menualite variable -> save it in model 
 		CreditModel model = new CreditModel(montant, taux, duree, mensualite);
-		//set the model in req object (rep null) -> forward into jpa (servlet end )
+		//set the model in req object (rep null) -> forward into jsp (servlet end )
 		req.setAttribute("creditmodel", model);
 		req.getRequestDispatcher("VueCredit.jsp").forward(req, resp);
 	}
